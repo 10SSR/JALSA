@@ -1,0 +1,92 @@
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
+  darkMode: 'class',
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/features/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        border: 'var(--border)',
+        input: 'var(--input)',
+        ring: 'var(--ring)',
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+        ivory: {
+          50: '#FDFCF7',
+          100: '#FAF6EC',
+          200: '#F4ECDA',
+          300: '#EDE0C4',
+          400: '#DEC99C',
+          500: '#CEAF73',
+          900: '#1C1917',
+        },
+        maroon: {
+          50: '#FDF2F4',
+          100: '#FBE8EC',
+          200: '#F6CCD6',
+          300: '#EE9FB2',
+          400: '#E26383',
+          500: '#CF335C',
+          600: '#B51F46',
+          700: '#941437',
+          800: '#6B1028',
+          900: '#4A0B1C',
+          950: '#2D050F',
+        },
+        saffron: {
+          50: '#FFF7ED',
+          100: '#FFEDD5',
+          200: '#FED7AA',
+          300: '#FDBA74',
+          400: '#FB923C',
+          500: '#EA580C',
+          600: '#C2410C',
+          700: '#9A3412',
+          800: '#7C2D12',
+          900: '#431407',
+        },
+        gold: {
+          50: '#FAF8EE',
+          100: '#F5F0D6',
+          200: '#E9DD9E',
+          300: '#DCB964',
+          400: '#CFA838',
+          500: '#B88C22',
+          600: '#996F19',
+          700: '#755114',
+          800: '#563B13',
+          900: '#3D2A0F',
+        },
+        emerald: {
+          50: '#EFFDF5',
+          100: '#D8FAEA',
+          200: '#B3F4D5',
+          300: '#7AE9B8',
+          400: '#3BD296',
+          500: '#13B479',
+          600: '#0A9060',
+          700: '#0B724F',
+          800: '#0C5B40',
+          900: '#0C4B36',
+          950: '#032B1E',
+        },
+      },
+      fontFamily: {
+        serif: ['var(--font-serif)', 'Cinzel', 'Playfair Display', 'Georgia', 'serif'],
+        sans: ['var(--font-sans)', 'Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+      },
+      boxShadow: {
+        'gold-glow': '0 0 25px -5px rgba(207, 168, 56, 0.3)',
+        'maroon-glow': '0 0 25px -5px rgba(181, 31, 70, 0.3)',
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;
